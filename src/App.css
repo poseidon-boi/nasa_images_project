@@ -5,7 +5,7 @@
 }
 
 :root {
-	--ACCENT-COLOR: rgb(62, 20, 101);
+	--ACCENT-COLOR: rgb(0, 0, 0);
 }
 
 .App {
@@ -14,32 +14,60 @@
 	flex-direction: column;
 	justify-content: space-between;
 	justify-items: center;
+	background-color: rgb(8, 0, 56);
+	font-family: ;
 }
 
 h1 {
+	background-color:rgb(4, 0, 30);
 	text-align: center;
+	padding: 2vh;
+	font-size: 5vh;
+	color: rgb(200, 200, 255);
 }
 
 footer {
 	padding: 0.4rem;
 	text-align: center;
-	background-color: var(--ACCENT-COLOR);
+	background-color: rgb(4, 0, 30);
+	font-size: 2vh;
+	color: rgb(200, 200, 255);
 }
 
 main {
 	display: flex;
+	justify-content: space-evenly;
+	padding: 5vw;
+	align-items: center;
 }
 
 img {
 	max-width: 40vw;
+	box-shadow: 0px 3px 5px 5px rgb(0, 0, 0);
+	margin-bottom: 5vh;
 }
 
 .description {
-	padding: 2rem;
+	padding: 2vw;
+	border-radius: 2vh;
+	background-color: rgb(6, 0, 39);
+	width: 20vw;
+	height: fit-content;
+	font-size: 3vh;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 3px 5px rgb(0, 0, 0) inset;
+	color: rgb(200, 200, 255);
 }
 
 .image-container {
-	margin: auto 5vw;
+	/* margin: auto 5vw; */
+	background-color: rgb(6, 0, 39);
+	padding: 2vw;
+	border-radius: 2vh;
+	box-shadow: 0px 3px 5px rgb(0, 0, 0) inset;
+	display: flex;
 }
 
 figure {
@@ -48,5 +76,6 @@ figure {
 
 figcaption {
 	text-align: center;
+	color: rgb(200, 200, 255);
 
 }
