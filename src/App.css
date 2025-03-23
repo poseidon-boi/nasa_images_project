@@ -15,7 +15,7 @@
 	justify-content: space-between;
 	justify-items: center;
 	background-color: rgb(8, 0, 56);
-	/* font-family: ; */
+	font-family:Arial, Helvetica, sans-serif ; 
 }
 
 h1 {
@@ -37,41 +37,36 @@ footer {
 main {
 	display: flex;
 	justify-content: space-evenly;
-	padding: 5vw;
 	align-items: center;
 }
 
 img {
+	width: 25vw;
 	max-width: 40vw;
 	box-shadow: 0px 3px 5px 5px rgb(0, 0, 0);
 	margin-bottom: 5vh;
 }
 
-.description {
-	padding: 2vw;
-	border-radius: 2vh;
-	background-color: rgb(6, 0, 39);
-	width: 20vw;
-	height: fit-content;
-	font-size: 3vh;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-	box-shadow: 0px 3px 5px rgb(0, 0, 0) inset;
-	color: rgb(200, 200, 255);
-}
-
-.image-container {
-	/* margin: auto 5vw; */
+.main-container {
 	background-color: rgb(6, 0, 39);
 	padding: 2vw;
 	border-radius: 2vh;
 	box-shadow: 0px 3px 5px rgb(0, 0, 0) inset;
 	display: flex;
+	height: 70vh;
+	align-items: center;
 }
 
 figure {
 	padding: 1vh 1vw;
+	display: flex;
+	align-items: baseline;
+}
+
+.something {
+	display: flex;
+	height: 55vh;
+	align-items: center;
 }
 
 figcaption {

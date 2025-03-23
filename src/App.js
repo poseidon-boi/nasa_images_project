@@ -42,10 +42,10 @@ function App() {
 	return (
 		<div className="App">
 			<header>
-				<h1>Nasa Images</h1>
+				<h1>NASA Images</h1>
 			</header>
 			<main>
-				<div className="image-container">
+				<div className="main-container">
 					<div className="left-arrow" onClick={() => handleClick(false)}></div>
 					{data ? (
 						<NasaImages data={data} currentImage={currentImage} />
@@ -54,10 +54,7 @@ function App() {
 					)}
 					<div className="right-arrow" onClick={() => handleClick(true)}></div>
 				</div>
-				<p className="description">
-					This website displays images from the NASA Mars Rover Photos API. NASA
-					is awesome!
-				</p>
+
 			</main>
 			<footer>Copyright &copy; {today.getFullYear()}</footer>
 		</div>

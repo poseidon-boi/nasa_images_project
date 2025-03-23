@@ -11,12 +11,15 @@ const NasaImages = ({ data, currentImage }) => {
 		return data.map((photo) => (
 			<figure
 				key={photo.id}
-				style={{ display: photo.index === currentImage ? "block" : "none" }}>
+				style={{ display: photo.index === currentImage ? "block" : "none" }}
+        >
+          <div className="something">
 				<img
 					src={photo.img_src}
 					alt={`Photo taken by ${photo.camera.name}`}
 					className="nasa_image"
 				/>
+        </div>
 				<figcaption>Image ID: {photo.id}</figcaption>
 			</figure>
 		));
@@ -25,14 +28,6 @@ const NasaImages = ({ data, currentImage }) => {
 	return (
 		<div className="NasaBox">
 			<div className="image-grid">
-				{/* {data.map((photo) => (
-          <img 
-            key={photo.id} 
-            src={photo.img_src} 
-            alt={`Photo taken by ${photo.camera.name}`} 
-            className="nasa_image"
-          />
-        ))} */}
 				{getPhotos()}
 			</div>
 		</div>
