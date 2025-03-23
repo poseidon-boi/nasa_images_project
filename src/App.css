@@ -15,11 +15,11 @@
 	justify-content: space-between;
 	justify-items: center;
 	background-color: rgb(8, 0, 56);
-	font-family: ;
+	/* font-family: ; */
 }
 
 h1 {
-	background-color:rgb(4, 0, 30);
+	background-color: rgb(4, 0, 30);
 	text-align: center;
 	padding: 2vh;
 	font-size: 5vh;
@@ -77,5 +77,26 @@ figure {
 figcaption {
 	text-align: center;
 	color: rgb(200, 200, 255);
+}
 
+.left-arrow,
+.right-arrow {
+	width: 0;
+	height: 0;
+	border-top: 1rem solid transparent;
+	border-bottom: 1rem solid transparent;
+	display: inline-block;
+}
+
+.left-arrow {
+	border-right: 1rem solid whitesmoke;
+}
+
+.right-arrow {
+	border-left: 1rem solid whitesmoke;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+	cursor: pointer;
 }
