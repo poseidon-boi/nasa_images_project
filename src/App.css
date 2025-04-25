@@ -15,7 +15,7 @@
 	justify-content: space-between;
 	justify-items: center;
 	background-color: rgb(8, 0, 56);
-	font-family:Arial, Helvetica, sans-serif ; 
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
@@ -41,8 +41,9 @@ main {
 }
 
 img {
-	width: 25vw;
-	max-width: 40vw;
+	width: min(60vw, 400px);
+	/* max-width: 40vw; */
+	/* margin: 1rem; */
 	box-shadow: 0px 3px 5px 5px rgb(0, 0, 0);
 	margin-bottom: 5vh;
 }
@@ -53,25 +54,28 @@ img {
 	border-radius: 2vh;
 	box-shadow: 0px 3px 5px rgb(0, 0, 0) inset;
 	display: flex;
-	height: 70vh;
+	/* height: min(70vh, 110vw); */
 	align-items: center;
 }
 
 figure {
-	padding: 1vh 1vw;
+	padding: 1vh min(5vw, 1.5rem);
 	display: flex;
 	align-items: baseline;
 }
 
 .something {
 	display: flex;
-	height: 55vh;
+	height: min(55vh, 70vw);
 	align-items: center;
+	justify-content: center;
+	margin-top: 2vh;
 }
 
 figcaption {
 	text-align: center;
 	color: rgb(200, 200, 255);
+	font-size: min(1rem, 7vw);
 }
 
 .left-arrow,
